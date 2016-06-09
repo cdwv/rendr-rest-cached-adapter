@@ -27,9 +27,11 @@ function RestCachedAdapter(options) {
 util.inherits(RestCachedAdapter, RestAdapter);
 
 RestCachedAdapter.prototype.request = function(req, api) {
+	/*
     _.defaults(api, {
       forever: true,
     });
+	*/
 
     var requestStartTime = Date.now();
     var _arguments = arguments;
